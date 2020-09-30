@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0" />
+    <title>Apartman ZEN</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#Pricing">Pricing</a>
+                <a class="nav-item nav-link" href="#Description">Description</a>
+                <a class="nav-item nav-link" href="#Where">Where</a>
+                <a class="nav-item nav-link" href="#Bookyourstay">Book your stay</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Prvi dio sa slikom u pozadini -->
+    <section id="Part1">
+
+        <div class="Part1">
+            <h1>ZEN</h1>
+            <p>ZADAR, CROATIA</p>
+        </div>
+
+    </section>
+
+
+    <!-- Cijene -->
+    <section id="Pricing">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">SUMMER JOY</div>
+                    <div class="card-body">
+                        <h5 class="card-title">June - September</h5>
+                        <p class="card-text">80 euros</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">WINTER EDITION</div>
+                    <div class="card-body">
+                        <h5 class="card-title">October - March</h5>
+                        <p class="card-text">40 euros</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">SPRING BREAK</div>
+                    <div class="card-body">
+                        <h5 class="card-title">April & May</h5>
+                        <p class="card-text">50 euros</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Opis apartmana -->
+    <section id="Description">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-header">WANT TO REST?</div>
+                    <div class="card-body">
+                        <h5 class="card-title">SPACE</h5>
+                        <p class="card-textdark">2 bedrooms (one kingsize bed and 2 single beds), 2 bathrooms, livingroom, kitchen, garden</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-header">THEY WORK FOR YOU</div>
+                    <div class="card-body">
+                        <h5 class="card-title">APPLIANCES</h5>
+                        <p class="card-textdark">Aircondition system x2, dishwasher, washing machine, oven, iron, hairdryer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-header">READY FOR A WALK?</div>
+                    <div class="card-body">
+                        <h5 class="card-title">TIME</h5>
+                        <p class="card-textdark">Old City - 10 min car/bus ride, closest beach - 3 min walk, closest bus station - 4 min walk</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- Google Mapa -->
+    <section id="Where">
+        <h2>Address - Ulica Grge Novaka</h2>
+        <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=Ulica%20Grge%20Novaka%20Zadar&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                    href="https://www.embedgooglemap.net/en/"></a></div>
+            <style>
+                .mapouter {
+                    position: relative;
+                    text-align: center;
+                   
+                    
+                }
+
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 100%;
+                    width: 90vw;
+                    display: block;
+                    margin: auto;
+                    border: solid 2px gray;
+                    border-radius: 4px;
+                    
+
+                }
+            </style>
+        </div>
+
+    </section>
+
+    <!-- Mail za rezervaciju -->
+    <section id="Bookyourstay">
+        <h2>Book your stay</h2>
+        
+        <div class="container-fluid">
+            <form action="mail_handler.php" method="post" name="contact_form">
+
+              <label for="email">E-mail</label>
+              <input type="text" id="email" name="emailaddress" placeholder="Your e-mail address..." required>  
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..." required>
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..." required>
+          
+          
+              <label for="subject">Message</label>
+              <textarea id="subject" name="usermessage" placeholder="Want to make a reservation?" required style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+
+    </section>
+
+    <!-- Kraj stranice -->
+    <section id="Footer">
+        @ApartmanZen 2020.
+    </section>
+
+
+
+
+
+
+
+</body>
+
+</html>

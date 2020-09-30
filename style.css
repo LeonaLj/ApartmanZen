@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Part1{
+   /*background-color: #E5E8E8;*/
+
+   background-image: url("https://p1.pxfuel.com/preview/1023/379/608/palm-wallpaper-paper-foliage.jpg");
+   padding: 100px;
+   width: 100%; 
+   height: 100%;
+   color: #515A5A;
+}
+    
+#Pricing{
+    background-color: #515A5A;
+    padding: 70px;
+    width: 100%; 
+    height: 100%;
+}
+
+#Description{
+    background-color: #E5E8E8;
+    padding: 70px;
+    width: 100%; 
+    height: 100%;
+}
+
+#Where{
+    background-color: whitesmoke;
+    padding: 50px;
+    width: 100%; 
+    height: 100%;
+}
+
+#Bookyourstay{
+    background-color: #E5E8E8;
+    padding: 50px;
+    width: 100%; 
+    height: 100%;
+}
+
+#Footer{
+    background-color: #515A5A;
+    text-align: center;
+    color: whitesmoke;
+    padding: 30px;
+    width: 100%; 
+    height: 100%;
+}
+
+body{
+    font-family:Georgia, serif;
+    color: #515A5A;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 8rem;
+}
+h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+p{
+    text-align: center;
+    font-weight: bold;
+}
+
+.list{
+    text-align: center;
+}
+
+.card-text{
+    font-size: 2rem;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #515A5A;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #a6b8b8;
+  }
+
+  #subject {
+      resize: none;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .card{
+      margin-left: 2.5rem;
+  }
+  
+
+  
+
