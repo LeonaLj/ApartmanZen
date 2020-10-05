@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html, body {
+    width: auto!important; overflow-x: hidden!important
+}
+
 .Part1{
    /*background-color: #E5E8E8;*/
 
